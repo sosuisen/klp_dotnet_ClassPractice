@@ -9,6 +9,10 @@ namespace ClassPractice
 
             var order2 = new Order(2, "Ted Nelson", DateTime.Now.AddDays(1));
             order2.DisplayOrder();
+
+            order2.CustomerName = "Douglas Engelbart";
+            order2.DisplayOrder();
+            Console.WriteLine(order2.OrderId);
         }
     }
 }

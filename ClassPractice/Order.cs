@@ -2,20 +2,20 @@ namespace ClassPractice
 {
     internal class Order
     {
-        private int orderId;
-        private string customerName;
-        private DateTime orderDate;
+        public int OrderId { get; set; }
+        public string CustomerName { get; set; }
+        public DateTime OrderDate { get; set; }
 
         public Order(int orderId, string customerName, DateTime dateTime)
         {
-            this.orderId = orderId;
-            this.customerName = customerName;
-            this.orderDate = dateTime;
+            OrderId = orderId;
+            CustomerName = customerName;
+            OrderDate = dateTime;
         }
 
         public void DisplayOrder()
         {
-            Console.WriteLine($"Order ID: {orderId}, Customer: {customerName}, Date: {orderDate.ToShortDateString()}");
+            Console.WriteLine($"Order ID: {OrderId}, Customer: {CustomerName}, Date: {OrderDate.ToShortDateString()}");
         }
     }
 }
