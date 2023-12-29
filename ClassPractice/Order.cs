@@ -2,15 +2,19 @@ namespace ClassPractice
 {
     internal class Order
     {
-        public int OrderId { get; set; }
-        public string CustomerName { get; set; }
-        public DateTime OrderDate { get; set; }
+        private int _orderId;
+        private string _customerName;
+        private DateTime _orderDate;
+        
+        public int OrderId {  get { return _orderId; } set { _orderId = value; } }
+        public string CustomerName {  get { return _customerName; } set { _customerName = value; } }
+        public DateTime OrderDate {  get { return _orderDate; } set { _orderDate = value; } }
 
         public Order(int orderId, string customerName, DateTime dateTime)
         {
-            OrderId = orderId;
-            CustomerName = customerName;
-            OrderDate = dateTime;
+            _orderId = orderId;
+            _customerName = customerName;
+            _orderDate = dateTime;
         }
 
         public void DisplayOrder()
