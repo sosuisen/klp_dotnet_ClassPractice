@@ -4,7 +4,7 @@ namespace ClassPractice
     {
         static void Main(string[] args)
         {
-            Order order = new Order();
+            Order order = new Order(1, "Alan Kay", DateTime.Now);
             order.DisplayOrder();
         }
     }
