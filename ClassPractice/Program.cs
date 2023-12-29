@@ -1,14 +1,14 @@
-namespace ClassPractice
+namespace BookPractice
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Order order = new Order(1, "Alan Kay", DateTime.Now);
-            order.DisplayOrder();
+            var book = new Book("Donald E. Knuth", "Literate Programming", 384);
+            book.DisplayBook();
 
-            Order order2 = new Order(2, "Ted Nelson", DateTime.Now.AddDays(1));
-            order2.DisplayOrder();
+            var book2 = new Book("Cixin Liu", "The Three-Body Problem", 400);
+            book2.DisplayBook();
         }
     }
 }
