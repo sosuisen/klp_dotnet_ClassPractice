@@ -6,7 +6,7 @@ namespace ClassPractice
         public string CustomerName { get; set; } = customerName;
         public DateTime OrderDate { get; set; } = dateTime;
 
-        public void DisplayOrder()
+        public virtual void DisplayOrder()
         {
             Console.WriteLine($"Order ID: {OrderId}, Customer: {CustomerName}, Date: {OrderDate.ToShortDateString()}");
         }

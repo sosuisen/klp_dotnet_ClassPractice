@@ -16,6 +16,9 @@ namespace ClassPractice
 
             var order3 = new OrderPrimary(3, "Tim Berners-Lee", DateTime.Now.AddDays(2));
             order3.DisplayOrder();
+
+            var order4 = new OnlineOrder(4, "Roy Fielding", DateTime.Now.AddDays(3), "California");
+            order4.DisplayOrder();
         }
     }
 }
