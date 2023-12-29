@@ -13,6 +13,9 @@ namespace ClassPractice
             order2.CustomerName = "Douglas Engelbart";
             order2.DisplayOrder();
             Console.WriteLine(order2.OrderId);
+
+            var order3 = new OrderPrimary(3, "Tim Berners-Lee", DateTime.Now.AddDays(2));
+            order3.DisplayOrder();
         }
     }
 }
